@@ -37,8 +37,8 @@ class AuthorDetail extends Component {
 
 const mapStateToProps = state => {
   return {
-    author: state.rootAuth.author,
-    loading: state.rootAuth.loading
+    author: state.rootAuthor.author,
+    loading: state.rootAuthor.loading
   };
 };
 
@@ -48,7 +48,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(AuthorDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(AuthorDetail);
