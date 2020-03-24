@@ -32,7 +32,4 @@ const mapDispatchToProps = dispatch => {
     filterAuthors: query => dispatch(actionCreators.filterAuthors(query))
   };
 };
-export default connect(
-  null,
-  mapDispatchToProps
-)(SearchBar);
+export default connect(null, mapDispatchToProps)(SearchBar);

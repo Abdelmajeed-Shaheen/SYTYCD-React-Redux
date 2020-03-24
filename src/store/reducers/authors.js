@@ -11,7 +11,7 @@ const reducer = (state = initialState, action) => {
     case actionTypes.FETCH_AUTHORS:
       return {
         ...state,
-        authors: state.authors.push(action.payload),
+        authors: [...action.payload],
         filteredAuthors: state.filteredAuthors.concat(action.payload),
         loading: false
       };
